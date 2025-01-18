@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762458754480",
+    "project_id": "personnel-hotel",
+    "storage_bucket": "personnel-hotel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762458754480:android:db69194865e0135bd05a75",
+        "android_client_info": {
+          "package_name": "com.example.hotel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMcOaA7LqFKFoyaBJaeRl1wmT_SVK6ioM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
