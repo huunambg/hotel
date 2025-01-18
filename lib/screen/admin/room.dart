@@ -1,3 +1,4 @@
+import 'package:cherry_toast/cherry_toast.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -431,13 +432,13 @@ class _RoomScreenState extends State<RoomScreen> {
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
               onPressed: () async {
                 Navigator.pop(context);
-                await roomColection
+                CherryToast.success(
+                  title: Text("Phòng đã được xóa thành công"),
+                ).show(context); 
+                roomColection
                     .collection("Room")
                     .doc(room.id) // Xóa phòng theo ID
                     .delete();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Phòng đã được xóa thành công")),
-                );
               },
               child: const Text("Xóa"),
             ),
